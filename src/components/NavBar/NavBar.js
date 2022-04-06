@@ -54,16 +54,6 @@ const NavBar = () => {
               </StyledGridSearch>
 
               <StyledGridIcon>
-                <IconButton
-                  edge="end"
-                  aria-label="account of current user"
-                  aria-haspopup="true"
-                  aria-controls="simple-menu"
-                >
-                  <AccountCircleIcon style={{ color: "white", fontSize: 35 }} />
-                  <StyledTitleIcon />
-                </IconButton>
-
                 <IconButton onClick={handleClickOpen}>
                   <Badge badgeContent={favorite?.length} color="secondary">
                     <FavoriteIcon style={{ color: "white", fontSize: 35 }} />
