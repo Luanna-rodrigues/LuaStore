@@ -8,6 +8,7 @@ import MainNav from "../../components/MainNav";
 import NavBar from "../../components/NavBar/NavBar";
 import NewsLetter from "../../components/NewLetter/NewsLetter";
 import SingleContent from "../../components/SingleContent/SingleContent";
+import { StyledFavTitle } from "../../styledComponents";
 
 const printGrid = (c, index) => {
   return (
@@ -43,6 +44,7 @@ const MensClothing = () => {
       <NavBar />
       <MainNav />
       <Container>
+      <StyledFavTitle>Men's Clothing!</StyledFavTitle>
         <Grid container justifyContent="center">
           {content &&
             content.map((c, index) => (
