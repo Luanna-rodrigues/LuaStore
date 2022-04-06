@@ -7,7 +7,6 @@ const StyledFavCard = styled(Card)`
     height: 300px;
     margin: 10px;
     margin-top: 30px;
-    cursor: pointer;
   }
 `;
 

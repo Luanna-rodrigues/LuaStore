@@ -149,10 +149,6 @@ const ShopCart = () => {
                           <StyledResume>RESUME</StyledResume>
                         </Grid>
                         <StyledGridSub>
-                          <Typography>Discount:</Typography>
-                          <Typography>$0,00</Typography>
-                        </StyledGridSub>
-                        <StyledGridSub>
                           <Typography>SubTotal:</Typography>
                           <Typography>
                             {total?.toLocaleString("en-US", {
@@ -160,6 +156,10 @@ const ShopCart = () => {
                               currency: "USD",
                             })}
                           </Typography>
+                        </StyledGridSub>
+                        <StyledGridSub>
+                          <Typography>Discount:</Typography>
+                          <Typography>$0,00</Typography>
                         </StyledGridSub>
                         <StyledGridSub>
                           <StyledTotalTyp>TOTAL:</StyledTotalTyp>

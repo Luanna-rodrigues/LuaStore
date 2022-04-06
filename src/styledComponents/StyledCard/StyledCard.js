@@ -7,7 +7,6 @@ const StyledCard = styled(Card)`
     height: 600px;
     margin: 10px;
     margin-top: 30px;
-    cursor: pointer;
   }
 `;
 
