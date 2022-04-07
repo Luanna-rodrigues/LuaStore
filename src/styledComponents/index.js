@@ -61,6 +61,8 @@ import StyledCardFavorite from "./StyledCard/StyledCardFavorite";
 import StyledButGrid from "./StyledCard/StyledButGrid";
 import StyledNewImage from "./StyledNew/StyledNewImage";
 import StyledNewGrid from "./StyledNew/StyledGridNew";
+import StyledGridGif from "./StyledGif/StyledGridGif";
+import StyledGifImage from "./StyledGif/StyledGifImage";
 export {
   StyledNavBar,
   StyledGridIcon,
@@ -125,4 +127,6 @@ export {
   StyledButGrid,
   StyledNewImage,
   StyledNewGrid,
+  StyledGridGif,
+  StyledGifImage,
 };
