@@ -9,6 +9,7 @@ const theme = {
     lightred: "#cd5c5c",
     green: "#33b133",
     coral: "#FF7F50",
+    rose: "#db7093	",
   },
 
   fontSizes: {
