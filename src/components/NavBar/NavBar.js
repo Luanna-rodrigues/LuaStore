@@ -3,7 +3,6 @@ import IconButton from "@material-ui/core/IconButton";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import SearchIcon from "@material-ui/icons/Search";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import {
   StyledNavBar,
   StyledGridIcon,

@@ -4,7 +4,7 @@ import { Container, Grid, Paper, IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import axios from "axios";
 import {
-  StyledImage,
+  StyledImageMo,
   StyledGridMoImg,
   StyledMoTitleOne,
   StyledMoTitleTwo,
@@ -67,7 +67,7 @@ const ModalItem = ({ open, onClose, id }) => {
                 </IconButton>
               </StyledButGrid>
               <StyledGridMoImg item xs={12}>
-                <StyledImage src={entity.image} alt={entity.title} />
+                <StyledImageMo src={entity.image} alt={entity.title} />
               </StyledGridMoImg>
               <Grid container justifyContent="center">
                 <Rating
