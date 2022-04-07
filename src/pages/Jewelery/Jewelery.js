@@ -44,7 +44,7 @@ const Jewelery = () => {
       <NavBar />
       <MainNav />
       <Container>
-        <StyledFavTitle>Jewelerys</StyledFavTitle>
+        <StyledFavTitle>Jewelry</StyledFavTitle>
         <Grid container justifyContent="center">
           {content &&
             content.map((c, index) => (

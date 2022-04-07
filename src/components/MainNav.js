@@ -16,7 +16,7 @@ const MainNav = () => {
     } else if (selected === 3) {
       navigate("/menclothing");
     } else if (selected === 4) {
-      navigate("/jewelery");
+      navigate("/jewelry");
     } else if (selected === 5) {
       navigate("/electronics");
     }
@@ -34,7 +34,7 @@ const MainNav = () => {
       <StyledButtonMain label="All Clothes" />
       <StyledButtonMain label="Women's Clothing" />
       <StyledButtonMain label="Men's Clothing" />
-      <StyledButtonMain label="Jewelery" />
+      <StyledButtonMain label="Jewelry" />
       <StyledButtonMain label="Electronics" />
     </StyledGridMain>
   );

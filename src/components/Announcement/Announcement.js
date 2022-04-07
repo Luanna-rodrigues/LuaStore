@@ -5,7 +5,7 @@ const Announcement = () => {
     <StyledGridAnnou container>
       <StyledTitleAnnou>
         {" "}
-        Super Deal! Free Shipping on Orders Over $45{" "}
+        Super Deal! Free Shipping on Orders Over $5{" "}
       </StyledTitleAnnou>
     </StyledGridAnnou>
   );
