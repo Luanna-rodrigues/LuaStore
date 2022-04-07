@@ -12,6 +12,8 @@ import {
   StyledGridMoItem,
   StyledButtonMo,
   StyledCount,
+  StyledNewImage,
+  StyledNewGrid,
 } from "../../styledComponents";
 import { Rating } from "@material-ui/lab";
 import useSettings from "../../hooks/useSettings";
@@ -51,6 +53,12 @@ const SingleContent = ({ id, title, price, image, rating }) => {
           <FavoriteBorderIcon />
         </IconButton>
       </StyledGridHeart>
+      <StyledNewGrid>
+        <StyledNewImage
+          src="https://cdn-icons.flaticon.com/png/512/2048/premium/2048907.png?token=exp=1649341858~hmac=b9c0f62bcefe3fbe9bbe0428ee06b734"
+          alt="percent"
+        />
+      </StyledNewGrid>
       <StyledGridImg>
         <StyledImage src={image} alt={title} />
       </StyledGridImg>
