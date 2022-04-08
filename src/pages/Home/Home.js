@@ -8,7 +8,8 @@ import MainNav from "../../components/MainNav";
 import Slider from "../../components/Slider/Slider";
 import NewsLetter from "../../components/NewLetter/NewsLetter";
 import Footer from "../../components/Footer/Footer";
-import { StyledFavTitle } from "../../styledComponents";
+import { StyledFavTitle, StyledLoading } from "../../styledComponents";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const printGrid = (c, index) => {
   return (
@@ -46,14 +47,20 @@ const Home = () => {
       <Slider />
       <Container>
         <StyledFavTitle>You Find Your Outfit Here!</StyledFavTitle>
-        <Grid container justifyContent="center">
-          {content &&
-            content.map((c, index) => (
-              <Grid item xs={4}>
-                {printGrid(c, index)}
-              </Grid>
-            ))}
-        </Grid>
+        {content && content?.length > 0 ? (
+          <Grid container justifyContent="center">
+            {content &&
+              content.map((c, index) => (
+                <Grid item xs={4}>
+                  {printGrid(c, index)}
+                </Grid>
+              ))}
+          </Grid>
+        ) : (
+          <StyledLoading>
+            <CircularProgress color="secondary" />
+          </StyledLoading>
+        )}
 
         <NewsLetter />
         <Footer />

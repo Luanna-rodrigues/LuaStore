@@ -64,6 +64,8 @@ import StyledNewGrid from "./StyledNew/StyledGridNew";
 import StyledGridGif from "./StyledGif/StyledGridGif";
 import StyledGifImage from "./StyledGif/StyledGifImage";
 import StyledImageMo from "./StyledModalItem/StyledImageMo";
+import StyledLoading from "./StyledLoading/StyledLoading";
+
 export {
   StyledNavBar,
   StyledGridIcon,
@@ -131,4 +133,6 @@ export {
   StyledGridGif,
   StyledGifImage,
   StyledImageMo,
+  StyledLoading,
+
 };

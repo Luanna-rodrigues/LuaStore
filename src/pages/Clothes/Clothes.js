@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { CircularProgress, Grid } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -9,7 +9,11 @@ import MainNav from "../../components/MainNav";
 import NavBar from "../../components/NavBar/NavBar";
 import NewsLetter from "../../components/NewLetter/NewsLetter";
 import SingleContent from "../../components/SingleContent/SingleContent";
-import { StyledFavTitle, StyledGridPag } from "../../styledComponents";
+import {
+  StyledFavTitle,
+  StyledGridPag,
+  StyledLoading,
+} from "../../styledComponents";
 
 const printGrid = (c, index) => {
   return (
@@ -46,14 +50,20 @@ const Clothes = () => {
       <MainNav />
       <Container>
         <StyledFavTitle>All </StyledFavTitle>
-        <Grid container justifyContent="center">
-          {content &&
-            content.map((c, index) => (
-              <Grid item xs={4}>
-                {printGrid(c, index)}
-              </Grid>
-            ))}
-        </Grid>
+        {content && content?.length > 0 ? (
+          <Grid container justifyContent="center">
+            {content &&
+              content.map((c, index) => (
+                <Grid item xs={4}>
+                  {printGrid(c, index)}
+                </Grid>
+              ))}
+          </Grid>
+        ) : (
+          <StyledLoading>
+            <CircularProgress color="secondary" />
+          </StyledLoading>
+        )}
         <StyledGridPag>
           <CustomPagination setPage={setPage} />
         </StyledGridPag>
